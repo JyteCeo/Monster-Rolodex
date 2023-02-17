@@ -1,5 +1,4 @@
 import { Component } from 'react';
-// import logo from './logo222.png';
 import './App.css';
 import CardList from './components/Card-list/card-list.component';
 import SearchBox from './components/Search-box/search-box.component';
@@ -14,7 +13,7 @@ class App extends Component {
       searchField : '',
     };
     }
-
+  
 
   componentDidMount() {
     fetch('https://jsonplaceholder.typicode.com/users')
@@ -46,8 +45,9 @@ class App extends Component {
     })
     return (
       <div className="App">
+        <h2 className='app-title'>monster <span>rolodexx</span></h2>
         <SearchBox 
-        className='search-box'
+        className='monsters-search-box'
         onChangeHandler={onSearchChange} 
         placeholder='search monster' />
 
